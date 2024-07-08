@@ -1,0 +1,129 @@
+/*반응형 스케일 조정*/
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#wrap {
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#fs-container {
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.container_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fs-header, #fs-footer {
+    width: 100%;
+}
+
+
+/*배경*/
+@keyframes airplane {
+	0% {
+		top: 90px;
+		left: -220px;
+	}
+	20% {
+		top: 90px;
+		left: -220px;
+	}
+	50%{
+		top: 10px;
+		left: 0px;
+	}
+	70%{
+		top: 10px;
+		left: 0px;
+	}
+	100%{
+		top: -110px;
+		left: 180px;
+	}
+  }
+  @keyframes balloon {
+	  0% {
+		top: 500px;
+		left: 1100px;
+	}
+	33% {
+		top: 470px;
+		left: 1100px;
+	}
+	66% {
+		top: 530px;
+		left: 1100px;
+	}
+	100%{
+		top: 500px;
+		left: 1100px;
+	}
+  }
+@keyframes globe {
+	0% {
+		transform: rotate(0deg);
+	  }
+	  50% {
+		transform: rotate(10deg);
+	  }
+	  100%{
+		transform: rotate(0deg);
+	  }
+  }
+
+.airplane{
+	position:absolute;
+	top: 90px;
+	left: -220px;
+	animation: airplane 6s infinite both;
+}
+
+.balloon{
+	position:absolute;
+	top: 500px;
+    left: 1100px;
+	animation: balloon 8s infinite both;
+}
+
+.globe{
+	position:absolute;
+	top: 400px;
+    left: -150px;
+	animation: globe 6s infinite both;
+}
+
+.backgroundGroup {
+    position:absolute;
+}
