@@ -28,7 +28,7 @@ function setContents() {
                         <li>4페이지: 객관식 콘텐츠</li><span>- 질문을 확인하고 정답을 체크합니다.</span>
                         <li>5페이지: 순서맞추기 콘텐츠</li><span>- 1~5까지 순서대로 찾습니다.</span>
                     </ul>
-                    <a href="./downloads/sample.txt" download="sample.txt" class="download">이력서 다운로드</a>
+                    <a href="./downloads/resume.pdf" download="resume.pdf" class="download">이력서 다운로드</a>
                 </div>
                 <!--contents02 주관식 콘텐츠-->
                 <div id="contents02" class="sceneLayer left2">
