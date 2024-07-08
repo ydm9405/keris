@@ -35,8 +35,8 @@ Promise.all([
 ])
   .then(() =>
       Promise.all([
+        loadScript("./js/header.js"),
           loadScript("./js/index.js"),
-          loadScript("./js/header.js"),
           loadScript("./js/contents.js"),
           loadScript("./js/bottom.js"),
           loadScript("./js/ui.js"),

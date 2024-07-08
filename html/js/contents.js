@@ -27,6 +27,7 @@ function setContents() {
                         <li>3페이지: OX 콘텐츠</li><span>- 질문을 확인하고 정답을 체크합니다.</span>
                         <li>4페이지: 객관식 콘텐츠</li><span>- 질문을 확인하고 정답을 체크합니다.</span>
                         <li>5페이지: 순서맞추기 콘텐츠</li><span>- 1~5까지 순서대로 찾습니다.</span>
+                        <li>6페이지: 카드뒤집기 콘텐츠</li><span>- 카드를 뒤집어 뒷면을 확인합니다.</span>
                     </ul>
                     <a href="./downloads/resume.pdf" download="resume.pdf" class="download">이력서 다운로드</a>
                 </div>
@@ -204,10 +205,10 @@ function setContents() {
     $(".o_btn").on("click", function () {
         var isCorrect = $(this).hasClass("correct");
         if (isCorrect) {
-            $(this).attr("src", "./css/img/contents02/o_on.png");
+            $(this).attr("src", "./css/img/contents03/o_on.png");
             oxResultSuccess();
         } else {
-            $(".x_btn").attr("src", "./css/img/contents02/x_on.png");
+            $(".x_btn").attr("src", "./css/img/contents03/x_on.png");
             oxResultFail();
         }
     });
@@ -216,10 +217,10 @@ function setContents() {
     $(".x_btn").on("click", function () {
         var isCorrect = $(this).hasClass("correct");
         if (isCorrect) {
-            $(this).attr("src", "./css/img/contents02/x_on.png");
+            $(this).attr("src", "./css/img/contents03/x_on.png");
             oxResultSuccess();
         } else {
-            $(".o_btn").attr("src", "./css/img/contents02/o_on.png");
+            $(".o_btn").attr("src", "./css/img/contents03/o_on.png");
             oxResultFail();
         }
     });

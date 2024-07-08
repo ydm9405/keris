@@ -33,6 +33,9 @@ function handleNextClick() {
         newBackground();
         updatePageNumber();
     }
+    $(".resultSuccess").hide();
+    $(".resultFail").hide();
+    $(".resultChance").hide();
     console.log("현재 페이지는 " + currentSceneNumber + "페이지 입니다.");
 }
 
@@ -46,6 +49,9 @@ function handlePrevClick() {
         newBackground();
         updatePageNumber();
     }
+    $(".resultSuccess").hide();
+    $(".resultFail").hide();
+    $(".resultChance").hide();
     console.log("현재 페이지는 " + currentSceneNumber + "페이지 입니다.");
 }
 
@@ -81,6 +87,12 @@ function newBackground() {
         $(".balloon").attr("src", "./css/img/background/puple/balloon.png");
         $(".globe").attr("src", "./css/img/background/puple/globe.png");
         $("#fs-container").css("background-image", "url('./css/img/background/puple/puple_bg.png')");
+    } else if (currentSceneNumber == 6){
+        $(".mainTitle").text("콘텐츠 기능 소개");
+        $(".airplane").attr("src", "./css/img/background/orange/airplane.png");
+        $(".balloon").attr("src", "./css/img/background/orange/balloon.png");
+        $(".globe").attr("src", "./css/img/background/orange/globe.png");
+        $("#fs-container").css("background-image", "url('./css/img/background/orange/orange_bg.png')");
     } else {
         $(".mainTitle").text("콘텐츠 코드 소개");
         $(".airplane").attr("src", "./css/img/background/orange/airplane.png");
