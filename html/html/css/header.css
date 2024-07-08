@@ -1,0 +1,10 @@
+#fs-header {
+    position:absolute;
+    top:0px;
+    z-index: 1;
+}
+
+.mainTitle{
+    font-size:36px;
+    padding:20px 0;
+}
