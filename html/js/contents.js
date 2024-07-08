@@ -20,7 +20,7 @@ function setContents() {
             <div id="pageContents">
                 <!--contents01 콘텐츠 소개-->
                 <div id="contents01" class="sceneLayer left1">
-                    <span class="introductionSubTitle">이 콘텐츠는 각각의 페이지별로 기능을 소개합니다.<div></div>실제 개발된 콘텐츠에서 간단하게 재구성하였으며<div></div>디자인 작업이 미흡한 점 양해부탁드립니다.</span>
+                    <span class="introductionSubTitle">이 콘텐츠는 각각의 페이지별로 기능을 소개하며<div></div>실제 개발된 콘텐츠에서 간단하게 재구성하였습니다.</span>
                     <ul class="introduction">
                         <li>1페이지: 소개</li><span>- 소개 페이지입니다.</span>
                         <li>2페이지: 주관식 콘텐츠</li><span>- 질문을 확인하고 키보드아이콘을 클릭 후 정답을 입력합니다.</span>
@@ -286,6 +286,7 @@ $(document).on("input", ".keyboardText", function () {
 
 /*주관식 정답*/
 function resultSuccess() {
+    answerCheck = 0;
     $(".keyboardText").attr("disabled", true);
     $(".complet").hide();
     $(".resultSuccess").show();
@@ -306,6 +307,7 @@ function resultChance() {
 
 /*주관식 오답*/
 function resultFail() {
+    answerCheck = 0;
     $("#result").html("2024년도");
     $(".keyboardText").val("2024년도");
     $("#keyboardText").attr("disabled", true);
@@ -360,6 +362,7 @@ function chooseAnswer(e) {
 
 function chooseResultSuccess(e) {
     console.log("정답");
+    chanceCount = 0;
     $(e).children(".check").attr("src", "./css/img/contents04/yes_check.png");
     $(e).css("pointer-events", "none");
     $(e).siblings("li").css("pointer-events", "none");
@@ -389,6 +392,7 @@ function chooseResultChance(e) {
 
 function chooseResultFail(e) {
     console.log("오답");
+    chanceCount = 0;
     $(e).children(".check").attr("src", "./css/img/contents04/yes_check.png");
     $(e).css("pointer-events", "none");
     $(e).siblings("li").css("pointer-events", "none");

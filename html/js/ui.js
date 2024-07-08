@@ -8,11 +8,11 @@ function initialize() {
 }
 
 function adjustScale() {
-  const wrap = document.getElementById("wrap");
+  var wrap = document.getElementById("wrap");
 
   function scaleContent() {
-      const windowRatio = window.innerWidth / window.innerHeight;
-      const targetRatio = 1280 / 720;
+      var windowRatio = window.innerWidth / window.innerHeight;
+      var targetRatio = 1280 / 720;
 
       if (windowRatio > targetRatio) {
           // 창의 가로가 더 길 때
